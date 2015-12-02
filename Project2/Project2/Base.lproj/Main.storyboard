@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vpN-6Z-RbJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Country-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Co-11-7kR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Atb-Wq-Ye8">
+                                        <rect key="frame" x="200" y="78" width="200" height="380"/>
+                                        <subviews>
+                                            <button contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-5b-HaA" userLabel="Button1">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="tY8-5b-HaA" secondAttribute="height" multiplier="2:1" id="bTM-Ub-mbK"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                                <state key="normal" image="estonia"/>
+                                                <connections>
+                                                    <action selector="didSelectExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meI-6b-Bs7"/>
+                                                </connections>
+                                            </button>
+                                            <button tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kye-pI-OI8" userLabel="Button2">
+                                                <rect key="frame" x="0.0" y="140" width="200" height="100"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kye-pI-OI8" secondAttribute="height" multiplier="2:1" id="Qvv-g4-bn2"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                                <state key="normal" image="france"/>
+                                                <connections>
+                                                    <action selector="didSelectExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wE-rW-9vl"/>
+                                                </connections>
+                                            </button>
+                                            <button tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-nY-PRC" userLabel="Button3">
+                                                <rect key="frame" x="0.0" y="280" width="200" height="100"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="LMG-nY-PRC" secondAttribute="height" multiplier="2:1" id="doi-XR-tgH"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                                <state key="normal" image="monaco"/>
+                                                <connections>
+                                                    <action selector="didSelectExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJU-o1-AOd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="kye-pI-OI8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tY8-5b-HaA" secondAttribute="bottom" priority="250" constant="40" id="9HQ-fL-mIs"/>
+                                            <constraint firstItem="tY8-5b-HaA" firstAttribute="height" secondItem="kye-pI-OI8" secondAttribute="height" id="eao-kV-A5K"/>
+                                            <constraint firstItem="kye-pI-OI8" firstAttribute="height" secondItem="LMG-nY-PRC" secondAttribute="height" id="ox5-1K-ISk"/>
+                                            <constraint firstItem="kye-pI-OI8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tY8-5b-HaA" secondAttribute="bottom" constant="20" id="roF-ui-qk2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Atb-Wq-Ye8" firstAttribute="centerY" secondItem="5Co-11-7kR" secondAttribute="centerY" id="4kA-ZH-ACC"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LMG-nY-PRC" secondAttribute="bottom" constant="4" id="5CE-54-81D"/>
+                                    <constraint firstItem="tY8-5b-HaA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5Co-11-7kR" secondAttribute="top" constant="4" id="9jn-zA-VLW"/>
+                                    <constraint firstItem="Atb-Wq-Ye8" firstAttribute="centerX" secondItem="5Co-11-7kR" secondAttribute="centerX" id="iGn-qU-9ZB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Co-11-7kR" secondAttribute="trailing" id="D6b-oH-gFU"/>
+                            <constraint firstItem="5Co-11-7kR" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Fgb-My-G0D"/>
+                            <constraint firstItem="5Co-11-7kR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="boC-JA-nra"/>
+                            <constraint firstItem="5Co-11-7kR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="byK-tv-ZFs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Country" id="1FV-OI-nrJ"/>
+                    <connections>
+                        <outletCollection property="flagButtons" destination="tY8-5b-HaA" collectionClass="NSMutableArray" id="Xtc-QN-IWI"/>
+                        <outletCollection property="flagButtons" destination="kye-pI-OI8" collectionClass="NSMutableArray" id="POc-mv-2F7"/>
+                        <outletCollection property="flagButtons" destination="LMG-nY-PRC" collectionClass="NSMutableArray" id="TYI-YK-5mp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="-381"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CP0-09-ozI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vpN-6Z-RbJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mDW-is-gU0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W7m-9e-TQM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NR-6Z-MYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <image name="france" width="200" height="100"/>
+        <image name="monaco" width="200" height="100"/>
+    </resources>
+</document>
