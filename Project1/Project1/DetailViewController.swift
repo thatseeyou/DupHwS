@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Social
+
 class DetailViewController: UIViewController {
 
     // CHANGE POINT
@@ -41,6 +43,17 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func actionPressed(sender: UIBarButtonItem) {
+        let vc = UIActivityViewController(activityItems: [detailImageView.image!], applicationActivities: [])
+        presentViewController(vc, animated:true, completion: nil)
+    }
 
+    @IBAction func facebookPressed(sender: UIBarButtonItem) {
+        let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        vc.setInitialText("Look at this great picture!")
+        vc.addImage(detailImageView.image!)
+        vc.addURL(NSURL(string: "http://www.photolib.noaa.gov/nssl"))
+        presentViewController(vc, animated: true, completion: nil)
+    }
 }
 
