@@ -9,7 +9,7 @@
 import UIKit
 import GameplayKit
 
-class ViewController: UIViewController {
+class P2ViewController: UIViewController {
     @IBOutlet var flagButtons: [UIButton]!
 
     let numExample = 3
@@ -67,8 +67,6 @@ class ViewController: UIViewController {
     }
 
     func newQuestion(action: UIAlertAction? = nil) {
-        @IBAction func openPressed(sender: UIBarButtonItem) {
-        }
         countries = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(countries) as! [String]
 
         for i in 0..<numExample {

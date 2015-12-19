@@ -8,7 +8,7 @@
         <!--Loading...-->
         <scene sceneID="MMy-hr-20l">
             <objects>
-                <viewController id="dEH-f9-c5C" customClass="ViewController" customModule="Project4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dEH-f9-c5C" customClass="P4ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cVi-7u-Vy8"/>
                         <viewControllerLayoutGuide type="bottom" id="16y-ds-8cc"/>

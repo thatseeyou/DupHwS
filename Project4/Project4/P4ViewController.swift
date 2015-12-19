@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class P4ViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var progressView: UIProgressView!
 
     var webView: WKWebView!
